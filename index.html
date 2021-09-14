@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my kitchen, order food in my kitchen, tasty food order in my kitchen</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        background: #000;
+    }
+    header::before{
+         content: '';
+         background-image: url(foodfo.jpg);
+         background-size: cover;
+         width: 100vw;
+         height: 100vh;
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         z-index: -1;
+         opacity: 0.6;
+       
+ 
+    }
+    .nav{
+        width: 100vw;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .nav li{
+       list-style: none;
+       margin-left: 10px;
+   }
+    .nav li a{
+       color: white;
+       font-size: 20px;
+       text-decoration: none;
+       text-transform: uppercase;
+
+   }
+   .nav li a:hover{
+       color: rgb(255, 255, 255);
+       font-size: 24px;
+       text-decoration: none;
+       animation: li 3s ease  infinite ;
+       text-transform: uppercase;
+   }
+   @keyframes li{
+       from{
+           color: rgb(255, 255, 255);
+           text-decoration: none;
+       }
+       to{
+           color: rgb(0, 0, 0);
+           text-decoration: underline;
+       }
+   }
+   form{
+       height: 100vh;
+       width: 100vw;
+       display: flex;
+       justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+   }
+    input{
+        height: 30px;
+        width: 400px;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 5px;
+        
+    }
+    .btn{
+        width: 200px;
+        height: 50px;
+        color: white;
+        background: #000;
+        margin-top: 10px;
+        font-size: 20px;
+        text-transform: capitalize;
+        cursor: pointer;
+        border-radius: 10px;
+
+    }
+    .btn:hover{
+        color: white;
+       background-color: orange;
+       font-size: 25px;
+
+    }
+    
+
+</style>
+<body>
+    <header>
+        <nav class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="Galery.html">Galery</a></li>
+            <li><a href="Our facility.html"> Our facility</a></li>
+        </nav>
+    </header>
+       <form action="backend.php">
+           <div class="form">
+               <input type="text" placeholder="Enter your name ">
+           </div>
+           <div class="form">
+               <input type="number" placeholder="Enter your number">
+           </div>
+           <div class="form">
+               <input type="Email" placeholder="Enter your Email"  >
+           </div>
+           <div class="form">
+               <input type="text" placeholder="Enter your budget">
+           </div>
+           <button class="btn">Book now</button>
+       </form>
+    
+</body>
+</html>
